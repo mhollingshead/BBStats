@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="content">
+    <div style="padding-top: 40px; padding-bottom: 40px; font-size: 20px; font-weight: 400; color: #2b2b2b;">
+      <span style="border-left: 3px solid #3c78d8; padding-left: 20px;">Winning Games</span>
+    </div>
+    <div>
+      <button onclick="show(0)" class="tab_selected" id="early_tab">Early Game</button><button onclick="show(1)" id="late_tab">Late Game</button>
+    </div>
+    <div id="wbh_early">
+      <div class="ritz grid-container" dir="ltr">
+       <table class="waffle no-grid" cellspacing="0" cellpadding="0">
+          <tbody>
+             <tr style='height:20px;'>
+                <td class="s55" dir="ltr" colspan="17">Winning Games by HOH Reigns</td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s1" dir="ltr"></td>
+                <td class="s2" dir="ltr" colspan="8">Early Game</td>
+                <td class="s3" dir="ltr" colspan="8">Skewed</td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s4" dir="ltr">Player</td>
+                <td class="s5" dir="ltr">HOH 1</td>
+                <td class="s5" dir="ltr">HOH 2</td>
+                <td class="s6" dir="ltr">HOH 3</td>
+                <td class="s5" dir="ltr">HOH 4</td>
+                <td class="s6" dir="ltr">HOH 5</td>
+                <td class="s5" dir="ltr">HOH 6</td>
+                <td class="s6" dir="ltr">HOH 7</td>
+                <td class="s5" dir="ltr">HOH 8</td>
+                <td class="s7" dir="ltr">HOH 9</td>
+                <td class="s4" dir="ltr">HOH 10</td>
+                <td class="s4" dir="ltr">HOH 11</td>
+                <td class="s4" dir="ltr">HOH 12</td>
+                <td class="s4" dir="ltr">HOH 13</td>
+                <td class="s4" dir="ltr">HOH 14</td>
+                <td class="s4" dir="ltr">HOH 15</td>
+                <td class="s4" dir="ltr">HOH 16</td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Will</td>
+                <td class="s9"></td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s12"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr"></td>
+                <td class="s13"></td>
+                <td class="s14"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Lisa</td>
+                <td class="s17"></td>
+                <td class="s18"></td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">3</td>
+                <td class="s19" dir="ltr">V</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s9"></td>
+                <td class="s12"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Jun</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s20"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s18"></td>
+                <td class="s19" dir="ltr">V</td>
+                <td class="s21"></td>
+                <td class="s22"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s11" dir="ltr"></td>
+                <td class="s14"></td>
+                <td class="s14"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Drew</td>
+                <td class="s18"></td>
+                <td class="s21"></td>
+                <td class="s23"></td>
+                <td class="s9"></td>
+                <td class="s24" dir="ltr">V</td>
+                <td class="s18"></td>
+                <td class="s25"></td>
+                <td class="s21"></td>
+                <td class="s22"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s17"></td>
+                <td class="s23"></td>
+                <td class="s13"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Maggie</td>
+                <td class="s18"></td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">4</td>
+                <td class="s23"></td>
+                <td class="s18"></td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">–</td>
+                <td class="s9"></td>
+                <td class="s26"></td>
+                <td class="s27" dir="ltr">V</td>
+                <td class="s20"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s11" dir="ltr"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Mike</td>
+                <td class="s18"></td>
+                <td class="s25"></td>
+                <td class="s20"></td>
+                <td class="s28" dir="ltr">V</td>
+                <td class="s18"></td>
+                <td class="s25"></td>
+                <td class="s21"></td>
+                <td class="s29"></td>
+                <td class="s30"></td>
+                <td class="s31" dir="ltr">0</td>
+                <td class="s23"></td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Dick</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s23"></td>
+                <td class="s18"></td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr"><span style="font-family:Arial;font-weight:bold;color:#bf9000;">V</span> 2</td>
+                <td class="s18"></td>
+                <td class="s32"></td>
+                <td class="s33"></td>
+                <td class="s34"></td>
+                <td class="s11" dir="ltr">–</td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Adam</td>
+                <td class="s18"></td>
+                <td class="s12"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s18"></td>
+                <td class="s21"></td>
+                <td class="s17"></td>
+                <td class="s33"></td>
+                <td class="s35"></td>
+                <td class="s28" dir="ltr">V</td>
+                <td class="s20"></td>
+                <td class="s11" dir="ltr"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Dan</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s25"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s36" dir="ltr">V</td>
+                <td class="s37"></td>
+                <td class="s38" dir="ltr">V</td>
+                <td class="s11" dir="ltr">–</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s14"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Jordan</td>
+                <td class="s20"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s33"></td>
+                <td class="s39" dir="ltr">V</td>
+                <td class="s12"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Hayden</td>
+                <td class="s17"></td>
+                <td class="s18"></td>
+                <td class="s20"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s40"></td>
+                <td class="s33"></td>
+                <td class="s34"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s41" dir="ltr">V</td>
+                <td class="s23"></td>
+                <td class="s14"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Rachel</td>
+                <td class="s41" dir="ltr">V</td>
+                <td class="s21"></td>
+                <td class="s22"></td>
+                <td class="s11" dir="ltr">–</td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s42"></td>
+                <td class="s30"></td>
+                <td class="s31" dir="ltr">2</td>
+                <td class="s43" dir="ltr">V</td>
+                <td class="s35"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s23"></td>
+                <td class="s14"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Ian</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s40"></td>
+                <td class="s33"></td>
+                <td class="s34"></td>
+                <td class="s44" dir="ltr">V</td>
+                <td class="s35"></td>
+                <td class="s45" dir="ltr">V</td>
+                <td class="s35"></td>
+                <td class="s46" dir="ltr">0</td>
+                <td class="s17"></td>
+                <td class="s14"></td>
+                <td class="s14"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Andy</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s9"></td>
+                <td class="s18"></td>
+                <td class="s40"></td>
+                <td class="s26"></td>
+                <td class="s42"></td>
+                <td class="s41" dir="ltr">V</td>
+                <td class="s20"></td>
+                <td class="s47" dir="ltr">0</td>
+                <td class="s26"></td>
+                <td class="s42"></td>
+                <td class="s21"></td>
+                <td class="s41" dir="ltr">V</td>
+                <td class="s17"></td>
+                <td class="s13"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Derrick</td>
+                <td class="s25"></td>
+                <td class="s48"></td>
+                <td class="s17"></td>
+                <td class="s18"></td>
+                <td class="s40"></td>
+                <td class="s26"></td>
+                <td class="s42"></td>
+                <td class="s33"></td>
+                <td class="s17"></td>
+                <td class="s49"></td>
+                <td class="s33"></td>
+                <td class="s34"></td>
+                <td class="s9"></td>
+                <td class="s48"></td>
+                <td class="s22"></td>
+                <td class="s11" dir="ltr"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Steve</td>
+                <td class="s28" dir="ltr">V</td>
+                <td class="s11" dir="ltr">–</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s40"></td>
+                <td class="s43" dir="ltr">V</td>
+                <td class="s34"></td>
+                <td class="s10"></td>
+                <td class="s47" dir="ltr">0</td>
+                <td class="s26"></td>
+                <td class="s42"></td>
+                <td class="s22"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s23"></td>
+                <td class="s17"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Nicole F</td>
+                <td class="s17"></td>
+                <td class="s25"></td>
+                <td class="s18"></td>
+                <td class="s25"></td>
+                <td class="s18"></td>
+                <td class="s32"></td>
+                <td class="s26"></td>
+                <td class="s42"></td>
+                <td class="s18"></td>
+                <td class="s21"></td>
+                <td class="s39" dir="ltr">V</td>
+                <td class="s26"></td>
+                <td class="s51" dir="ltr">V</td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s11" dir="ltr"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Josh</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">–</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">3</td>
+                <td class="s21"></td>
+                <td class="s29"></td>
+                <td class="s26"></td>
+                <td class="s42"></td>
+                <td class="s18"></td>
+                <td class="s40"></td>
+                <td class="s26"></td>
+                <td class="s38" dir="ltr">V</td>
+                <td class="s22"></td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Kaycee</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s25"></td>
+                <td class="s18"></td>
+                <td class="s12"></td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s11" dir="ltr">0</td>
+                <td class="s19" dir="ltr">V</td>
+                <td class="s38" dir="ltr">V</td>
+                <td class="s39" dir="ltr">V</td>
+                <td class="s42"></td>
+                <td class="s52" dir="ltr">V</td>
+                <td class="s53" dir="ltr">V</td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+             </tr>
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Jackson</td>
+                <td class="s9"></td>
+                <td class="s18"></td>
+                <td class="s10"></td>
+                <td class="s28" dir="ltr">V</td>
+                <td class="s10"></td>
+                <td class="s11" dir="ltr">2</td>
+                <td class="s21"></td>
+                <td class="s41" dir="ltr" style="border-bottom: 2px SOLID #6d9eeb;">V</td>
+                <td class="s36" dir="ltr" style="border-bottom: 2px SOLID #6d9eeb;">V</td>
+                <td class="s37"></td>
+                <td class="s42"></td>
+                <td class="s22"></td>
+                <td class="s28" dir="ltr">V</td>
+                <td class="s17"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+             <!--
+                HOH Background: #d9ead3
+                HOH Border: 1px SOLID #b6d7a8
+                Nom Background: #f4cccc
+                Nom Border: 1px SOLID #ea9999
+                Veto Color: #b7b7b7
+                Nothing Border: 1px SOLID #d9d9d9
+                Double Border: 2px SOLID #6d9eeb
+              -->
+             <tr style='height:20px;'>
+                <td class="s8" dir="ltr">Cody</td>
+                <td style="border: 1px SOLID #b6d7a8; background: #d9ead3"></td>
+                <td class="s18"></td>
+                <td class="s18" style="color: #b7b7b7; font-weight: 600; font-size: 10pt">V</td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s18"></td>
+                <td class="s18" style="border-right: 2px SOLID #6d9eeb;"></td>
+                <td style="border-right: 1px SOLID #b6d7a8; border-bottom: 2px SOLID #6d9eeb; background: #d9ead3; color: #b7b7b7; font-weight: 600; font-size: 10pt" align="center">V</td>
+                <td class="s18" style="border-bottom: 2px SOLID #6d9eeb;"></td>
+                <td class="s18" style="border-bottom: 2px SOLID #6d9eeb; border-right: 2px SOLID #6d9eeb;"></td>
+                <td style="border: 1px SOLID #b6d7a8; background: #d9ead3; color: #b7b7b7; font-weight: 600; font-size: 10pt" align="center">V</td>
+                <td class="s18"></td>
+                <td class="s18" style="color: #b7b7b7; font-weight: 600; font-size: 10pt; border-right: 1px SOLID #b6d7a8;">V</td>
+                <td style="border: 1px SOLID #b6d7a8; background: #d9ead3"></td>
+                <td class="s15"></td>
+                <td class="s15"></td>
+             </tr>
+          </tbody>
+       </table>
+      </div>
+      <div class="early_perc" style="padding-top: 20px;">
+        <table>
+          <tr>
+            <td class="hoh">HOH</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; text-align: right;">23.80%</td>
+            <td class="even_empty"><b>0%</b></td>
+            <td class="even_empty">19.04%</td>
+            <td class="even_empty">4.76%</td>
+            <td class="even_empty"><b>0%</b></td>
+            <td class="even_empty">9.52%</td>
+            <td class="even_empty">9.52%</td>
+            <td class="even_empty">42.85%</td>
+            <td class="even_empty"><span style="opacity: 0.6">14.28%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">25%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">47.36%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">46.66%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">30%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">37.5%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">83.33%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">50%</span></td>
+          </tr>
+          <tr>
+            <td class="nom">Nom</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; background: #f2f2f2; text-align: right;">4.76%</td>
+            <td class="odd_empty">23.8%</td>
+            <td class="odd_empty">19.04%</td>
+            <td class="odd_empty">33.33%</td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty">19.04%</td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty"><span style="opacity: 0.6">28.57%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">40%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">21.05%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">13.33%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">20%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">37.5%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">16.66%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">50%</span></td>
+          </tr>
+          <tr>
+            <td class="even_empty" style="text-align: center;">Nothing</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; text-align: right;">71.42%</td>
+            <td class="even_empty">76.19%</td>
+            <td class="even_empty">61.90%</td>
+            <td class="even_empty">61.90%</td>
+            <td class="even_empty">85.71%</td>
+            <td class="even_empty">80.95%</td>
+            <td class="even_empty">71.42%</td>
+            <td class="even_empty">47.61%</td>
+            <td class="even_empty"><span style="opacity: 0.6">57.14%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">35%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">31.57%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">40%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">50%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">25%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">0%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">–</span></td>
+          </tr>
+          <tr>
+            <td class="odd_empty" style="text-align: center; color: #bf9000; font-weight: bold; background: white;">Veto</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; background: #f2f2f2; text-align: right;">5%</td>
+            <td class="odd_empty"><b>0%</b></td>
+            <td class="odd_empty"><b>0%</b></td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty"><b>0%</b></td>
+            <td class="odd_empty"><span style="opacity: 0.6">9.52%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">5%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">10%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">–</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="wbh_late" class="hidden_tab">
+      <div class="ritz grid-container" dir="ltr">
+       <table class="waffle no-grid" cellspacing="0" cellpadding="0">
+          <tbody>
+          <tr style='height:20px;'>
+             <td class="s55" colspan="17">Winning Games by HOH Reigns</td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s56"></td>
+             <td class="s3" colspan="8">Skewed</td>
+             <td class="s2" colspan="8">Late Game</td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s4">Player</td>
+             <td class="s4">FHOH–15</td>
+             <td class="s4">FHOH–14</td>
+             <td class="s4">FHOH–13</td>
+             <td class="s4">FHOH–12</td>
+             <td class="s4">FHOH–11</td>
+             <td class="s4">FHOH–10</td>
+             <td class="s4">FHOH–9</td>
+             <td class="s4">FHOH–8</td>
+             <td class="s5">FHOH–7</td>
+             <td class="s6">FHOH–6</td>
+             <td class="s5">FHOH–5</td>
+             <td class="s6">FHOH–4</td>
+             <td class="s5">FHOH–3</td>
+             <td class="s6">FHOH–2</td>
+             <td class="s5">FHOH–1</td>
+             <td class="s6">FHOH</td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Will</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s58"></td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s59"></td>
+             <td class="s11">0</td>
+             <td class="s50"></td>
+             <td class="s11">0</td>
+             <td class="s50"></td>
+             <td class="s11">1</td>
+             <td class="s59"></td>
+             <td class="s11"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Lisa</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s60"></td>
+             <td class="s61"></td>
+             <td class="s8"></td>
+             <td class="s50"></td>
+             <td class="s11">3</td>
+             <td class="s52">V</td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s62"></td>
+             <td class="s11">0</td>
+             <td class="s63"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Jun</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s64"></td>
+             <td class="s8"></td>
+             <td class="s50"></td>
+             <td class="s11">0</td>
+             <td class="s8"></td>
+             <td class="s19">V</td>
+             <td class="s65"></td>
+             <td class="s66"></td>
+             <td class="s11">0</td>
+             <td class="s11"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Drew</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s67"></td>
+             <td class="s61"></td>
+             <td class="s8"></td>
+             <td class="s24">V</td>
+             <td class="s68"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s69"></td>
+             <td class="s11">0</td>
+             <td class="s63"></td>
+             <td class="s63"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Maggie</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s50"></td>
+             <td class="s11">4</td>
+             <td class="s61"></td>
+             <td class="s68"></td>
+             <td class="s50"></td>
+             <td class="s11">–</td>
+             <td class="s8"></td>
+             <td class="s64"></td>
+             <td class="s27">V</td>
+             <td class="s70"></td>
+             <td class="s11">0</td>
+             <td class="s11"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Mike</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s68"></td>
+             <td class="s62"></td>
+             <td class="s28">V</td>
+             <td class="s8"></td>
+             <td class="s68"></td>
+             <td class="s8"></td>
+             <td class="s71"></td>
+             <td class="s70"></td>
+             <td class="s31">0</td>
+             <td class="s63"></td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Dick</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s50"></td>
+             <td class="s11">1</td>
+             <td class="s61"></td>
+             <td class="s68"></td>
+             <td class="s50"></td>
+             <td class="s11"><span style="font-family:Arial;font-weight:bold;color:#bf9000;">V</span> 2</td>
+             <td class="s64"></td>
+             <td class="s72"></td>
+             <td class="s73"></td>
+             <td class="s74"></td>
+             <td class="s11">–</td>
+             <td class="s63"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Adam</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s59"></td>
+             <td class="s11">0</td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s61"></td>
+             <td class="s73"></td>
+             <td class="s75"></td>
+             <td class="s28">V</td>
+             <td class="s62"></td>
+             <td class="s11"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Dan</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s59"></td>
+             <td class="s11">0</td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s36">V</td>
+             <td class="s76"></td>
+             <td class="s38">V</td>
+             <td class="s11">–</td>
+             <td class="s63"></td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Jordan</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s50"></td>
+             <td class="s11">1</td>
+             <td class="s11">1</td>
+             <td class="s8"></td>
+             <td class="s68"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s39">V</td>
+             <td class="s70"></td>
+             <td class="s11">1</td>
+             <td class="s11">0</td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Hayden</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s77"></td>
+             <td class="s61"></td>
+             <td class="s64"></td>
+             <td class="s59"></td>
+             <td class="s11">1</td>
+             <td class="s8"></td>
+             <td class="s78"></td>
+             <td class="s73"></td>
+             <td class="s74"></td>
+             <td class="s11">0</td>
+             <td class="s79">V</td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Rachel</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s41">V</td>
+             <td class="s8"></td>
+             <td class="s69"></td>
+             <td class="s11">–</td>
+             <td class="s46">0</td>
+             <td class="s78"></td>
+             <td class="s70"></td>
+             <td class="s31">2</td>
+             <td class="s43">V</td>
+             <td class="s69"></td>
+             <td class="s11">0</td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Ian</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s73"></td>
+             <td class="s74"></td>
+             <td class="s81">V</td>
+             <td class="s75"></td>
+             <td class="s45">V</td>
+             <td class="s69"></td>
+             <td class="s11">0</td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8" dir="ltr">Andy</td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s64"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s78"></td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s41">V</td>
+             <td class="s50"></td>
+             <td class="s31">0</td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s8"></td>
+             <td class="s41">V</td>
+             <td class="s63"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Derrick</td>
+             <td class="s68"></td>
+             <td class="s67"></td>
+             <td class="s61"></td>
+             <td class="s8"></td>
+             <td class="s72"></td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s73"></td>
+             <td class="s61"></td>
+             <td class="s82"></td>
+             <td class="s73"></td>
+             <td class="s74"></td>
+             <td class="s64"></td>
+             <td class="s67"></td>
+             <td class="s69"></td>
+             <td class="s11"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Steve</td>
+             <td class="s28">V</td>
+             <td class="s11">–</td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s72"></td>
+             <td class="s43">V</td>
+             <td class="s74"></td>
+             <td class="s70"></td>
+             <td class="s47">0</td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s69"></td>
+             <td class="s11">1</td>
+             <td class="s63"></td>
+             <td class="s63"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Nicole F</td>
+             <td class="s60"></td>
+             <td class="s61"></td>
+             <td class="s68"></td>
+             <td class="s8"></td>
+             <td class="s68"></td>
+             <td class="s8"></td>
+             <td class="s83"></td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s39">V</td>
+             <td class="s80"></td>
+             <td class="s51">V</td>
+             <td class="s11">0</td>
+             <td class="s11"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Josh</td>
+             <td class="s57"></td>
+             <td class="s50"></td>
+             <td class="s11">–</td>
+             <td class="s50"></td>
+             <td class="s11">3</td>
+             <td class="s8"></td>
+             <td class="s71"></td>
+             <td class="s80"></td>
+             <td class="s78"></td>
+             <td class="s8"></td>
+             <td class="s72"></td>
+             <td class="s80"></td>
+             <td class="s38">V</td>
+             <td class="s69"></td>
+             <td class="s11">0</td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Kaycee</td>
+             <td class="s57"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s8"></td>
+             <td class="s68"></td>
+             <td class="s50"></td>
+             <td class="s11">1</td>
+             <td class="s11">0</td>
+             <td class="s84">V</td>
+             <td class="s36">V</td>
+             <td class="s39">V</td>
+             <td class="s78"></td>
+             <td class="s84">V</td>
+             <td class="s85">V</td>
+             <td class="s61"></td>
+          </tr>
+          <tr style='height:20px;'>
+             <td class="s8">Jackson</td>
+             <td class="s57"></td>
+             <td class="s57"></td>
+             <td class="s8" style="border-bottom: 1px SOLID #b6d7a8"></td>
+             <td class="s8"></td>
+             <td class="s50"></td>
+             <td class="s28">V</td>
+             <td class="s50"></td>
+             <td class="s11">2</td>
+             <td class="s8"></td>
+             <td class="s41" style="border-bottom: 2px SOLID #6d9eeb">V</td>
+             <td class="s36" style="border-bottom: 2px SOLID #6d9eeb">V</td>
+             <td class="s76" style="border-bottom: 2px SOLID #6d9eeb"></td>
+             <td class="s78"></td>
+             <td class="s69"></td>
+             <td class="s28">V</td>
+             <td class="s61"></td>
+          </tr>
+          <!--
+             HOH Background: #d9ead3
+             HOH Border: 1px SOLID #b6d7a8
+             Nom Background: #f4cccc
+             Nom Border: 1px SOLID #ea9999
+             Veto Color: #b7b7b7
+             Nothing Border: 1px SOLID #d9d9d9
+             Double Border: 2px SOLID #6d9eeb
+           -->
+          <tr style='height:20px;'>
+             <td class="s8" dir="ltr">Cody</td>
+             <td class="s15"></td>
+             <td class="s15" style="border-right: 1px SOLID #b6d7a8"></td>
+             <td style="border: 1px SOLID #b6d7a8; background: #d9ead3"></td>
+             <td class="s18"></td>
+             <td class="s18" style="color: #b7b7b7; font-weight: 600; font-size: 10pt">V</td>
+             <td class="s18"></td>
+             <td class="s18"></td>
+             <td class="s18"></td>
+             <td class="s18" style="border-right: 2px SOLID #6d9eeb;"></td>
+             <td style="border-right: 1px SOLID #b6d7a8; border-bottom: 2px SOLID #6d9eeb; background: #d9ead3; color: #b7b7b7; font-weight: 600; font-size: 10pt" align="center">V</td>
+             <td class="s18" style="border-bottom: 2px SOLID #6d9eeb;"></td>
+             <td class="s18" style="border-bottom: 2px SOLID #6d9eeb; border-right: 2px SOLID #6d9eeb;"></td>
+             <td style="border: 1px SOLID #b6d7a8; background: #d9ead3; color: #b7b7b7; font-weight: 600; font-size: 10pt" align="center">V</td>
+             <td class="s18"></td>
+             <td class="s18" style="color: #b7b7b7; font-weight: 600; font-size: 10pt; border-right: 1px SOLID #b6d7a8;">V</td>
+             <td style="border: 1px SOLID #b6d7a8; background: #d9ead3"></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="early_perc" style="padding-top: 20px;">
+        <table>
+          <tr>
+            <td class="hoh">HOH</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; text-align: right;"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="even_empty"><span style="opacity: 0.6">16.66%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">25%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="even_empty"><span style="opacity: 0.6">6.66%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">10.52%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">25%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">4.76%</span></td>
+            <td class="even_empty">9.52%</td>
+            <td class="even_empty">14.28%</td>
+            <td class="even_empty">4.76%</td>
+            <td class="even_empty">38.09%</td>
+            <td class="even_empty">23.80%</td>
+            <td class="even_empty">28.57%</td>
+            <td class="even_empty">33.33%</td>
+            <td class="even_empty">71.42%</td>
+          </tr>
+          <tr>
+            <td class="nom">Nom</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; background: #f2f2f2; text-align: right;"><span style="opacity: 0.6">50%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">16.66%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">12.50%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">6.66%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">21.05%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">15%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">23.80%</span></td>
+            <td class="odd_empty">19.04%</td>
+            <td class="odd_empty">23.80%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty">38.09%</td>
+            <td class="odd_empty">47.61%</td>
+            <td class="odd_empty">28.57%</td>
+          </tr>
+          <tr>
+            <td class="even_empty" style="text-align: center;">Nothing</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; text-align: right;"><span style="opacity: 0.6">50%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">66.66%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">62.5%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6"><b>100%</b></span></td>
+            <td class="even_empty"><span style="opacity: 0.6">86.66%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">68.42%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">60%</span></td>
+            <td class="even_empty"><span style="opacity: 0.6">71.42%</span></td>
+            <td class="even_empty">66.66%</td>
+            <td class="even_empty">61.90%</td>
+            <td class="even_empty">90.47%</td>
+            <td class="even_empty">52.38%</td>
+            <td class="even_empty">66.66%</td>
+            <td class="even_empty">33.33%</td>
+            <td class="even_empty">19.04%</td>
+            <td class="even_empty">–</td>
+          </tr>
+          <tr>
+            <td class="odd_empty" style="text-align: center; color: #bf9000; font-weight: bold; background: white;">Veto</td>
+            <td style="border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; background: #f2f2f2; text-align: right;"><span style="opacity: 0.6">50%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6"><b>0%</b></span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">5.26%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">5%</span></td>
+            <td class="odd_empty"><span style="opacity: 0.6">4.76%</span></td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty"><b>0%</b></td>
+            <td class="odd_empty"><b>0%</b></td>
+            <td class="odd_empty">9.52%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty">4.76%</td>
+            <td class="odd_empty">–</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top: 20px;">
+      <table style="margin: auto;">
+        <tr>
+          <td class="hoh_box" style="width: 20px; height: 20px;">
+
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – HOH
+          </td>
+          <td class="nom_box" style="width: 20px; height: 20px;">
+            0
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Nominated / Votes Against
+          </td>
+          <td style="width: 20px; height: 20px; border: 1px solid #d9d9d9">
+
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Nothing
+          </td>
+          <td style="width: 20px; height: 20px; border: 1px solid #d9d9d9; font-weight: bold; text-align: center; color: #bf9000;">
+            V
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Veto <i>(Used)</i>
+          </td>
+          <td style="width: 20px; height: 20px; border: 1px solid #d9d9d9; font-weight: bold; text-align: center; color: #b7b7b7;">
+            V
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Veto <i>(Didn't Use)</i>
+          </td>
+          <td style="width: 20px; height: 20px; border: 2px solid #6d9eeb;">
+
+          </td>
+          <td style="padding-left: 5px;">
+            – Double Eviction
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="spacer"></div>
+    <div style="padding-top: 20px; padding-bottom: 40px; font-size: 20px; font-weight: 400; color: #2b2b2b;">
+      <span style="border-left: 3px solid #3c78d8; padding-left: 20px;">Games by Season</span>
+    </div>
+    <button class="selected" onclick="makeSeason(this, 2)">S2</button><button onclick="makeSeason(this, 3)">S3</button><button onclick="makeSeason(this, 4)">S4</button><button onclick="makeSeason(this, 5)">S5</button><button onclick="makeSeason(this, 6)">S6</button><button onclick="makeSeason(this, 7)">S7</button><button onclick="makeSeason(this, 8)">S8</button><button onclick="makeSeason(this, 9)">S9</button><button onclick="makeSeason(this, 10)">S10</button><button onclick="makeSeason(this, 11)">S11</button><button onclick="makeSeason(this, 12)">S12</button><button onclick="makeSeason(this, 13)">S13</button><button onclick="makeSeason(this, 14)">S14</button><button onclick="makeSeason(this, 15)">S15</button><button onclick="makeSeason(this, 16)">S16</button><button onclick="makeSeason(this, 17)">S17</button><button onclick="makeSeason(this, 18)">S18</button><button onclick="makeSeason(this, 19)">S19</button><button onclick="makeSeason(this, 20)">S20</button><button onclick="makeSeason(this, 21)">S21</button><button onclick="makeSeason(this, 22)">S22</button>
+    <div style="background:black; color: white; font-weight: 600; text-align: center; padding: 5px; width: calc(100% - 10px); font-size: 10pt;">
+      Player Games by HOH Reigns
+    </div>
+    <table id="diagram" style="width: 100%; height: 1px;"></table>
+    <div style="height: 20px"></div>
+    <div>
+      <div style="background:black; color: white; font-weight: 600; text-align: center; padding: 3px; font-size: 10px !important;" id="data_head">
+        <table style="margin: auto;">
+          <tr>
+            <td>
+              <span onclick="newReign(this, -1)" class="trans" style="cursor:pointer; font-size: 10px;" id="left">&#x25C0;</span>
+            </td>
+            <td width="75px">
+              <span>HOH <span id="hoh_number">1</span></span>
+            </td>
+            <td>
+              <span onclick="newReign(this, 1)" style="cursor:pointer; font-size: 10px;" id="right">&#x25B6;</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <table style="width: 100%">
+        <tr style="background: #666666">
+          <td style="color: white; padding: 3px; font-weight: 600; width: 12%">
+            Rank
+          </td>
+          <td style="color: white; padding: 3px; font-weight: 600; width: 12%">
+            Player
+          </td>
+          <td style="color: white; padding: 3px; font-weight: 600; width: 12%" title="Number of similar winners during this HOH reign">
+            Points
+          </td>
+          <td style="color: white; padding: 3px; font-weight: 600; width: 12%" title="Average percentage of similar winners for each HOH reign">
+            Average %
+          </td>
+          <td style="color: white; padding: 3px; font-weight: 600; width: 12%">
+            Running %
+          </td>
+          <td style="color: white; padding: 3px; font-weight: 600; width: 12%">
+            HOH Points
+          </td>
+          <td style="color: white; padding: 3px; font-weight: 600; width: 28%">
+            Similar Winners
+          </td>
+        </tr>
+      </table>
+      <table id="data_table" style="width:100%"></table>
+    </div>
+    <div style="margin-top: 20px;">
+      <table style="margin: auto;">
+        <tr>
+          <td class="hoh_box" style="width: 20px; height: 20px;">
+
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – HOH
+          </td>
+          <td class="nom_box" style="width: 20px; height: 20px;">
+            0
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Nominated / Votes Against
+          </td>
+          <td class="evicted_box" style="width: 20px; height: 20px;">
+            1
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Evicted / Votes Against
+          </td>
+          <td style="width: 20px; height: 20px; border: 1px solid #d9d9d9">
+
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Nothing
+          </td>
+          <td style="width: 20px; height: 20px; border: 1px solid #d9d9d9; font-weight: bold; text-align: center; color: #bf9000;">
+            V
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Veto <i>(Used)</i>
+          </td>
+          <td style="width: 20px; height: 20px; border: 1px solid #d9d9d9; font-weight: bold; text-align: center; color: #b7b7b7;">
+            V
+          </td>
+          <td style="padding-left: 5px; padding-right: 30px;">
+            – Veto <i>(Didn't Use)</i>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="spacer"></div>
+    <div style="padding-top: 20px; padding-bottom: 40px; font-size: 20px; font-weight: 400; color: #2b2b2b;">
+      <span style="border-left: 3px solid #3c78d8; padding-left: 20px;">Player Stats</span>
+    </div>
+    <div style="background:black; color: white; font-weight: 600; text-align: center; padding: 5px; width: calc(100% - 10px); font-size: 10pt;">
+      Player Stats
+    </div>
+    <table style="width: 100%">
+      <tr style="background: #666666">
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" class="p">
+          <span class="at">Player</span>
+          <span class="n" style="display: none">
+            <span class="u">↑</span><span class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(1, 'a')" class="p">
+          <span class="at">Season</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(1, 'a')" class="u">↑</span><span onclick="sortBy(1, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(2, 'a')" class="p">
+          <span class="at">Place</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(2, 'a')" class="u">↑</span><span onclick="sortBy(2, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" class="sel_cat p" onclick="sortBy(3, 'a')">
+          <span class="at">Comp Wins</span><sup style="font-weight: 300">1</sup>
+          <span class="n">
+            <span onclick="sortBy(3, 'a')" class="u">↑</span><span onclick="sortBy(3, 'd')" class="d trans">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(4, 'a')" class="p">
+          <span class="at">HOHs</span><sup style="font-weight: 300">2</sup>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(4, 'a')" class="u">↑</span><span onclick="sortBy(4, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(5, 'a')" class="p">
+          <span class="at">Vetos</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(5, 'a')" class="u">↑</span><span onclick="sortBy(5, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(6, 'a')" class="p">
+          <span class="at">Used Vetos</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(6, 'a')" class="u">↑</span><span onclick="sortBy(6, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(7, 'a')" class="p">
+          <span class="at">Unused Vetos</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(7, 'a')" class="u">↑</span><span onclick="sortBy(7, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(8, 'a')" class="p">
+          <span class="at">Nominations</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(8, 'a')" class="u">↑</span><span onclick="sortBy(8, 'd')" class="d">↓</span>
+          </span>
+        </td>
+        <td style="color: white; padding: 3px; font-weight: 600; width: 10%; cursor: pointer;" onclick="sortBy(9, 'a')" class="p">
+          <span class="at">Votes Against</span>
+          <span class="n" style="display: none">
+            <span onclick="sortBy(9, 'a')" class="u">↑</span><span onclick="sortBy(9, 'd')" class="d">↓</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <table id="player_table" style="width:100%"></table>
+    <table width="100%">
+      <td style="padding: 10px; font-size: 12px; opacity: 0.4">
+        <span onclick="table_rows=10; document.getElementsByClassName('cur_row')[0].classList.remove('cur_row'); this.classList.add('cur_row'); sortBy(cur_sort, cur_ad)" style="cursor: pointer;">Top 10</span><span style="font-weight: 200; opacity: 0.3; padding-left: 5px; padding-right: 5px">|</span><span onclick="table_rows=25; document.getElementsByClassName('cur_row')[0].classList.remove('cur_row'); this.classList.add('cur_row'); sortBy(cur_sort, cur_ad)" style="cursor: pointer;" class="cur_row">Top 25</span><span style="font-weight: 200; opacity: 0.3; padding-left: 5px; padding-right: 5px">|</span><span onclick="table_rows=50; document.getElementsByClassName('cur_row')[0].classList.remove('cur_row'); this.classList.add('cur_row'); sortBy(cur_sort, cur_ad)" style="cursor: pointer;">Top 50</span>
+      </td>
+      <td>
+        <div style="padding: 10px; font-size: 12px; opacity: 0.4; font-style: italic; text-align: right">
+          <sup>1</sup> Excluding Luxury, Twist, or Battle-Back competitions &nbsp;&nbsp;&nbsp;
+          <sup>2</sup> Including dethroned HOHs
+        </div>
+      </td>
+    </table>
+  </div>
+  <div style="height: 500px;">
+
+  </div>
+  <script src="data.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    var table_rows = 25;
+    var cur_sort = "Comp Wins";
+    var cur_ad = "a";
+    function show(num) {
+      document.getElementsByClassName('hidden_tab')[0].classList.remove("hidden_tab");
+      document.getElementsByClassName('tab_selected')[0].classList.remove("tab_selected");
+      if (num === 1) {
+        document.getElementById("wbh_early").classList.add("hidden_tab");
+        document.getElementById("late_tab").classList.add("tab_selected");
+      }
+      else {
+        document.getElementById("wbh_late").classList.add("hidden_tab");
+        document.getElementById("early_tab").classList.add("tab_selected");
+      }
+    }
+    function sortBy(n, o) {
+      document.getElementsByClassName('sel_cat')[0].classList.toggle('sel_cat');
+      for (var j = 1; j < document.getElementsByClassName('p').length; j++) {
+        if (j === n) {
+          document.getElementsByClassName('p')[j].setAttribute('onclick', "");
+        }
+        else {
+          document.getElementsByClassName('p')[j].setAttribute('onclick', "sortBy(" + j + ", 'a')");
+        }
+      }
+      document.getElementsByClassName('p')[n].classList.toggle('sel_cat')
+      for (var i = 0; i < document.getElementsByClassName('n').length; i++) {
+        document.getElementsByClassName('n')[i].style.display = "none";
+      }
+
+      document.getElementsByClassName('n')[n].style.display = "inline-block";
+
+      if (o === 'a') {
+        if (document.getElementsByClassName('u')[n].classList.contains('trans')) {
+          document.getElementsByClassName('u')[n].classList.remove('trans');
+        }
+        document.getElementsByClassName('d')[n].classList.add('trans');
+
+        var sort = document.getElementsByClassName('at')[n].innerHTML;
+        cur_sort = n;
+        cur_ad = 'a';
+        makeStatTable(sort, 'a');
+      }
+
+      if (o === 'd') {
+        if (document.getElementsByClassName('d')[n].classList.contains('trans')) {
+          document.getElementsByClassName('d')[n].classList.remove('trans');
+        }
+        document.getElementsByClassName('u')[n].classList.add('trans');
+
+        var sort = document.getElementsByClassName('at')[n].innerHTML;
+        makeStatTable(sort, 'd');
+        cur_sort = n;
+        cur_ad = 'd';
+      }
+      return false;
+    }
+    sortBy(3, 'a')
+  </script>
+</body>
+</html>
